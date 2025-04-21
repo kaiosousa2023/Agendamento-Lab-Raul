@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Laboratório</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento de Aulas</h1>
+
+    <form id="form-agendamento">
+      <input type="text" id="professor" placeholder="Nome do Professor" required>
+      <input type="text" id="materia" placeholder="Matéria" required>
+      <input type="datetime-local" id="data_hora" required>
+      <button type="submit">Agendar</button>
+    </form>
+
+    <h2>Agendamentos</h2>
+    <table id="tabela-agendamentos">
+      <thead>
+        <tr>
+          <th>Professor</th>
+          <th>Matéria</th>
+          <th>Data e Hora</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
